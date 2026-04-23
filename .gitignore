@@ -31,3 +31,10 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
