@@ -7,7 +7,13 @@ authors = [
     { name = "corbinc1998", email = "corbincurnutt1998@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "alembic>=1.18.4",
+    "psycopg[binary]>=3.3.3",
+    "pydantic>=2.13.3",
+    "pydantic-settings>=2.14.0",
+    "sqlalchemy>=2.0.49",
+]
 
 [project.scripts]
 sim-league-platform = "sim_league_platform:main"
@@ -18,6 +24,7 @@ dev = [
     "pytest-cov>=5.0",
     "ruff>=0.8",
     "mypy>=1.13",
+    "types-pyyaml>=6.0.12.20260408",
 ]
 
 [build-system]
